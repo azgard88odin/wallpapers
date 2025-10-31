@@ -1,0 +1,10 @@
+[Unit]
+Description=Randomize wallpapers every hour
+
+[Timer]
+OnBootSec=5min
+Unit=set_random_wallpapers.service
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
